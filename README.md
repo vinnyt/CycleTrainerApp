@@ -3,4 +3,6 @@
 
 https://apps.apple.com/us/app/cycletrainer-ride-tracker/id1589835732
 
-https://allens-first-bucket.s3.amazonaws.com/cycletrainer_live.mov
+<figure class="video_container">
+  <iframe src="https://allens-first-bucket.s3.amazonaws.com/cycletrainer_live.mov" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
