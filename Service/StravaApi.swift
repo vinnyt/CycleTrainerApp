@@ -79,6 +79,14 @@ class StravaAPI: StravaApiProtocol {
             case .failure(let error):
                 completion(.failure(error))
             case .success(_):
+                if let responseData = response.data {
+                    do {                        
+                        let auth = try JSONDecoder().decode(StravaAuth.self, from: responseData)
+                        self.setTokens(auth: auth)
+                    } catch {
+
+                    }
+                }
                 completion(.success(true))
             }
         }
